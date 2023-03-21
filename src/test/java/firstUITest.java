@@ -17,8 +17,9 @@ public class firstUITest {
         driver.findElement(By.xpath("//input[@title='Вхід на пошту']")).click();
         driver.quit();
     }
+
     @Test
-    public  void firstSeleniumTestLoginWithManager(){
+    public void firstSeleniumTestLoginWithManager() {
         WebDriverManager.edgedriver().setup();
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.i.ua/");

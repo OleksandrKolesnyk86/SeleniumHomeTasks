@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a06d092-ae4b-482b-8e05-b2e99caf1224" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="9a06d092-ae4b-482b-8e05-b2e99caf1224" name="Changes" comment="SeleniumHomeTasks">
       <change afterPath="$PROJECT_DIR$/src/test/java/firstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/firstUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,35 +55,12 @@
       <recent name="C:\Users\sanya\IdeaProjects\testsSelenium" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.firstUITest">
-    <configuration name="firstTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testsSelenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="firstTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.secondTestUISelenium">
     <configuration name="firstUITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="firstUITest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="firstUITest.firstSeleniumTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testsSelenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="firstUITest" />
-      <option name="METHOD_NAME" value="firstSeleniumTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -121,13 +91,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="secondTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testsSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="secondTestUISelenium" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="secondTestUISelenium.firstSeleniumTestLoginWithManager" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testsSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="secondTestUISelenium" />
+      <option name="METHOD_NAME" value="firstSeleniumTestLoginWithManager" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.secondTestUISelenium" />
+        <item itemvalue="TestNG.secondTestUISelenium.firstSeleniumTestLoginWithManager" />
         <item itemvalue="TestNG.firstUITest" />
         <item itemvalue="TestNG.firstUITest.firstSeleniumTestLoginWithManager" />
         <item itemvalue="TestNG.firstUITest.firstSeleniumTestLogin" />
-        <item itemvalue="TestNG.firstUITest.firstSeleniumTest" />
-        <item itemvalue="TestNG.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +133,25 @@
       <option name="presentableId" value="Default" />
       <updated>1679300629531</updated>
     </task>
+    <task id="LOCAL-00001" summary="SeleniumHomeTasks">
+      <created>1679339670716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679339670716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SeleniumHomeTasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="SeleniumHomeTasks" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
