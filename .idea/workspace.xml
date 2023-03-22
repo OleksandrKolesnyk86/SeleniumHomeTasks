@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a06d092-ae4b-482b-8e05-b2e99caf1224" name="Changes" comment="SeleniumHomeTasks">
+      <change afterPath="$PROJECT_DIR$/src/test/java/fifthTestUISelenium.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/firstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/fourthTestUISelenium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/thirdTestUISelenium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f705488b-0023-4d8b-ab0a-12aeb4346fc2" />
+        <option name="url" value="https://github.com/OleksandrKolesnyk86/SeleniumHomeTasks" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,11 +70,11 @@
       <recent name="C:\Users\sanya\IdeaProjects\testsSelenium" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.secondTestUISelenium">
-    <configuration name="firstUITest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.fifthTestUISelenium.fourthTestSelenium">
+    <configuration name="fifthTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="firstUITest" />
+      <option name="MAIN_CLASS_NAME" value="fifthTestUISelenium" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -67,11 +82,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstUITest.firstSeleniumTestLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="fifthTestUISelenium.fourthTestSelenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="firstUITest" />
-      <option name="METHOD_NAME" value="firstSeleniumTestLogin" />
+      <option name="MAIN_CLASS_NAME" value="fifthTestUISelenium" />
+      <option name="METHOD_NAME" value="fourthTestSelenium" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -79,22 +94,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="firstUITest.firstSeleniumTestLoginWithManager" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="fourthTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="firstUITest" />
-      <option name="METHOD_NAME" value="firstSeleniumTestLoginWithManager" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="secondTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testsSelenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="secondTestUISelenium" />
+      <option name="MAIN_CLASS_NAME" value="fourthTestUISelenium" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -102,12 +105,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="secondTestUISelenium.firstSeleniumTestLoginWithManager" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="fourthTestUISelenium.fourthTestSelenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="secondTestUISelenium" />
-      <option name="METHOD_NAME" value="firstSeleniumTestLoginWithManager" />
+      <option name="MAIN_CLASS_NAME" value="fourthTestUISelenium" />
+      <option name="METHOD_NAME" value="fourthTestSelenium" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="thirdTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testsSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="thirdTestUISelenium" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -116,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.secondTestUISelenium" />
-        <item itemvalue="TestNG.secondTestUISelenium.firstSeleniumTestLoginWithManager" />
-        <item itemvalue="TestNG.firstUITest" />
-        <item itemvalue="TestNG.firstUITest.firstSeleniumTestLoginWithManager" />
-        <item itemvalue="TestNG.firstUITest.firstSeleniumTestLogin" />
+        <item itemvalue="TestNG.fifthTestUISelenium.fourthTestSelenium" />
+        <item itemvalue="TestNG.fifthTestUISelenium" />
+        <item itemvalue="TestNG.fourthTestUISelenium.fourthTestSelenium" />
+        <item itemvalue="TestNG.fourthTestUISelenium" />
+        <item itemvalue="TestNG.thirdTestUISelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679339670716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SeleniumHomeTasks">
+      <created>1679403048763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679403048763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
