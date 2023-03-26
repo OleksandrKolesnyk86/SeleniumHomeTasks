@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a06d092-ae4b-482b-8e05-b2e99caf1224" name="Changes" comment="SeleniumHomeTasks">
-      <change afterPath="$PROJECT_DIR$/src/test/java/fifthTestUISelenium.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/firstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fourthTestUISelenium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/thirdTestUISelenium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/secondTestUISelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fifthTestUISelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fifthTestUISelenium.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <recent name="C:\Users\sanya\IdeaProjects\testsSelenium" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.fifthTestUISelenium.fourthTestSelenium">
+  <component name="RunManager" selected="TestNG.fifthTestUISelenium">
     <configuration name="fifthTestUISelenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.fifthTestUISelenium.fourthTestSelenium" />
         <item itemvalue="TestNG.fifthTestUISelenium" />
+        <item itemvalue="TestNG.fifthTestUISelenium.fourthTestSelenium" />
         <item itemvalue="TestNG.fourthTestUISelenium.fourthTestSelenium" />
         <item itemvalue="TestNG.fourthTestUISelenium" />
         <item itemvalue="TestNG.thirdTestUISelenium" />
@@ -161,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679403048763</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SeleniumHomeTasks">
+      <created>1679465151827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679465151827</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

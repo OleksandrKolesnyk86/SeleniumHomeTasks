@@ -1,9 +1,11 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class fifthTestUISelenium {
@@ -17,9 +19,9 @@ public class fifthTestUISelenium {
         driver.findElement(managerLocator).click();
         By customersChoose = By.xpath("//button[@ng-click='showCust()']");
         driver.findElement(customersChoose).click();
-        By deleteCustomer = By.xpath("//tbody/tr[1]/td[5]/button[1]");
-        for (int i = 0; i < 5; i++) {
-            driver.findElement(deleteCustomer).click();
+        List<WebElement> deleteCustomer = driver.findElements(By.name("Delete"));
+        for (WebElement element : deleteCustomer) {
+            element.click();
         }
         driver.quit();
     }
