@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="9a06d092-ae4b-482b-8e05-b2e99caf1224" name="Changes" comment="SeleniumHomeTasks">
       <change afterPath="$PROJECT_DIR$/src/TestsSelenium/java/firstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaitsTaskTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaitsTaskFour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaitsTaskThree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsSelenium/java/fifthTestUISelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestsSelenium/java/fifthTestUISelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsSelenium/java/firstUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestsSelenium/java/firstUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsSelenium/java/fourthTestUISelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestsSelenium/java/fourthTestUISelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaitsTaskTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestsSelenium/java/testUISeleniumWaitsTaskTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,10 +67,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanya/IdeaProjects/testsSelenium/src/Lesson2&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/sanya/IdeaProjects/testsSelenium/target/generated-test-sources/test-annotations&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sanya/IdeaProjects/testsSelenium&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -68,36 +80,51 @@
       <recent name="C:\Users\sanya\IdeaProjects\testsSelenium\src\Lesson2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sanya\IdeaProjects\testsSelenium\src\TestsSelenium" />
       <recent name="C:\Users\sanya\IdeaProjects\testsSelenium" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.testUISeleniumWaitsTaskTwo.waitsTestUISeleniumWaitsPartTwo">
-    <configuration name="testUISeleniumWaits" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartFour">
+    <configuration name="testUISeleniumWaitsTaskFour" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaits" />
+      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskFour" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUISeleniumWaitsTaskTwo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartFour" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskTwo" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskFour" />
+      <option name="METHOD_NAME" value="waitsTestUISeleniumWaitsPartFour" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUISeleniumWaitsTaskTwo.waitsTestUISeleniumWaitsPartTwo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartTwo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskTwo" />
+      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskFour" />
       <option name="METHOD_NAME" value="waitsTestUISeleniumWaitsPartTwo" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -106,11 +133,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUISeleniumWaits.testUISeleniumWaits" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUISeleniumWaitsTaskThree" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testsSelenium" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaits" />
-      <option name="METHOD_NAME" value="testUISeleniumWaits" />
+      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskThree" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testUISeleniumWaitsTaskThree.waitsTestUISeleniumWaitsPartThree" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testsSelenium" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaitsTaskThree" />
+      <option name="METHOD_NAME" value="waitsTestUISeleniumWaitsPartThree" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -118,25 +156,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUISeleniumWaits.waitsTestUISeleniumWaits" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="testsSelenium" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUISeleniumWaits" />
-      <option name="METHOD_NAME" value="waitsTestUISeleniumWaits" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="TestNG.testUISeleniumWaitsTaskFour" />
+      <item itemvalue="TestNG.testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartFour" />
+      <item itemvalue="TestNG.testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartTwo" />
+      <item itemvalue="TestNG.testUISeleniumWaitsTaskThree" />
+      <item itemvalue="TestNG.testUISeleniumWaitsTaskThree.waitsTestUISeleniumWaitsPartThree" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testUISeleniumWaitsTaskTwo.waitsTestUISeleniumWaitsPartTwo" />
-        <item itemvalue="TestNG.testUISeleniumWaitsTaskTwo" />
-        <item itemvalue="TestNG.testUISeleniumWaits" />
-        <item itemvalue="TestNG.testUISeleniumWaits.waitsTestUISeleniumWaits" />
-        <item itemvalue="TestNG.testUISeleniumWaits.testUISeleniumWaits" />
+        <item itemvalue="TestNG.testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartFour" />
+        <item itemvalue="TestNG.testUISeleniumWaitsTaskFour" />
+        <item itemvalue="TestNG.testUISeleniumWaitsTaskThree.waitsTestUISeleniumWaitsPartThree" />
+        <item itemvalue="TestNG.testUISeleniumWaitsTaskThree" />
+        <item itemvalue="TestNG.testUISeleniumWaitsTaskFour.waitsTestUISeleniumWaitsPartTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680103049151</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="SeleniumHomeTasks">
+      <created>1680105727739</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680105727739</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,5 +242,9 @@
         <watch expression="this" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
