@@ -7,6 +7,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.math.BigDecimal;
+import java.util.Random;
+
 public class testUISeleniumWaitsTaskFour {
     @Test
     public void waitsTestUISeleniumWaitsPartFour() {
@@ -25,15 +28,17 @@ public class testUISeleniumWaitsTaskFour {
         wait.until(ExpectedConditions.visibilityOfElementLocated(sortChoose)).click();
         By sortPriceFromLowToHigh = By.xpath("//option[@value='lohi']");
         wait.until(ExpectedConditions.visibilityOfElementLocated(sortPriceFromLowToHigh)).click();
-        By addItemToCart = By.xpath("//button[@id='add-to-cart-sauce-labs-onesie']");
+        //получаем цену продукта из списка
+        Random random = new Random();
+        String randomItemNumber = Integer.toString(random.nextInt(4));
+        By itemPriceToCompare = By.xpath("//*[@id='item_" + randomItemNumber + "_title_link']/ancestor::*[@class='inventory_item_description']//*[@class='inventory_item_price']");
+        String itemPriceFromList = wait.until(ExpectedConditions.visibilityOfElementLocated(itemPriceToCompare)).getText();
+        By addItemToCart = By.xpath("//*[@id='item_" + randomItemNumber + "_title_link']/ancestor::*[@class='inventory_item_description']//*[contains(@id,\"add\")]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(addItemToCart)).click();
         By shoppingCart = By.xpath("//div[@id='shopping_cart_container']");
         wait.until(ExpectedConditions.visibilityOfElementLocated(shoppingCart)).click();
-        By itemPriceToCompare = By.xpath("//div[text()='7.99']");
-        By itemPriceFromCartWithoutTax = By.xpath("//div[@class='inventory_item_price']");
-        //получаем цену продукта из списка
-        String itemPriceFromList = wait.until(ExpectedConditions.visibilityOfElementLocated(itemPriceToCompare)).getText();
         //получаем цену проджукта из корзины
+        By itemPriceFromCartWithoutTax = By.xpath("//div[@class='inventory_item_price']");
         String itemPriceFromCart = wait.until(ExpectedConditions.visibilityOfElementLocated(itemPriceFromCartWithoutTax)).getText();
         //сравниваем цены выбраного продукта в списке продуктов и в корзине
         Assert.assertEquals(itemPriceFromList, itemPriceFromCart);
@@ -57,18 +62,17 @@ public class testUISeleniumWaitsTaskFour {
         String itemPriceFromCartAfterCheckout = totalPriceWithoutTaxGetText.substring(totalPriceWithoutTaxGetText.indexOf("$"));
         //сравниваем цены выбраного продукта в списке продуктов, в корзине и после чекаута(без учета налога)
         Assert.assertEquals(itemPriceFromList, itemPriceFromCart, itemPriceFromCartAfterCheckout);
-        double priceWithoutTax = Double.parseDouble(totalPriceWithoutTaxGetText.substring(totalPriceWithoutTaxGetText.indexOf("$") + 1));
         By tax = By.xpath("//div[@class='summary_tax_label']");
         String taxString = wait.until(ExpectedConditions.visibilityOfElementLocated(tax)).getText();
-        double taxOnly = Double.parseDouble(taxString.substring(taxString.indexOf("$") + 1));
-        double priceFromCartWithoutTaxOnly = Double.parseDouble(totalPriceWithoutTaxGetText.substring(totalPriceWithoutTaxGetText.indexOf("$") + 1));
+        BigDecimal taxOnly = new BigDecimal(taxString.substring(taxString.indexOf("$") + 1));
+        BigDecimal priceFromCartWithoutTaxOnly = new BigDecimal(totalPriceWithoutTaxGetText.substring(totalPriceWithoutTaxGetText.indexOf("$") + 1));
         //Сравниваем цены выбранного продукта из списка, в корзине после чекаута и тотал прайс (без учета налога)
         Assert.assertEquals(itemPriceFromList, itemPriceFromCartAfterCheckout, totalPriceWithoutTaxGetText);
         //Получаем размер налога и тотал прайс до налога
-        double totalPriceWithTax = priceFromCartWithoutTaxOnly + taxOnly;
+        BigDecimal totalPriceWithTax = priceFromCartWithoutTaxOnly.add(taxOnly);
         By totalPriceFromCart = By.xpath("//div[@class='summary_info_label summary_total_label']");
         String priceWithTax = wait.until(ExpectedConditions.visibilityOfElementLocated(totalPriceFromCart)).getText();
-        double totalPriceFromCartWithTax = Double.parseDouble(priceWithTax.substring(priceWithTax.indexOf("$") + 1));
+        BigDecimal totalPriceFromCartWithTax = new BigDecimal(priceWithTax.substring(priceWithTax.indexOf("$") + 1));
         //Сравниваем сумму покупки с учетом налога
         Assert.assertEquals(totalPriceWithTax, totalPriceFromCartWithTax);
         By finishButton = By.xpath("//button[@id='finish']");
