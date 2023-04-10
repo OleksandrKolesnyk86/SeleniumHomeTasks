@@ -1,6 +1,7 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class testUISeleniumWaitsTaskFour {
@@ -29,8 +31,10 @@ public class testUISeleniumWaitsTaskFour {
         By sortPriceFromLowToHigh = By.xpath("//option[@value='lohi']");
         wait.until(ExpectedConditions.visibilityOfElementLocated(sortPriceFromLowToHigh)).click();
         //получаем цену продукта из списка
+        By list = By.cssSelector(".inventory_item");
+        ArrayList<WebElement> listOfItems = new ArrayList<>(driver.findElements(list));
         Random random = new Random();
-        String randomItemNumber = Integer.toString(random.nextInt(4));
+        String randomItemNumber = Integer.toString(random.nextInt(listOfItems.size()));
         By itemPriceToCompare = By.xpath("//*[@id='item_" + randomItemNumber + "_title_link']/ancestor::*[@class='inventory_item_description']//*[@class='inventory_item_price']");
         String itemPriceFromList = wait.until(ExpectedConditions.visibilityOfElementLocated(itemPriceToCompare)).getText();
         By addItemToCart = By.xpath("//*[@id='item_" + randomItemNumber + "_title_link']/ancestor::*[@class='inventory_item_description']//*[contains(@id,\"add\")]");
