@@ -2,6 +2,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +15,7 @@ public class advancedSeleniumTestSix {
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+        driver.manage().window().maximize();
         driver.get("https://demoqa.com/automation-practice-form");
         By firstName = By.cssSelector("#firstName");
         wait.until(ExpectedConditions.elementToBeClickable(firstName)).sendKeys("Kolesnyk");
@@ -25,7 +27,7 @@ public class advancedSeleniumTestSix {
         wait.until(ExpectedConditions.elementToBeClickable(genderChoose)).click();
         By mobileNumber = By.cssSelector("#userNumber");
         wait.until(ExpectedConditions.elementToBeClickable(mobileNumber)).sendKeys("8955262314");
-        By dateOfBirth = By.cssSelector("#dateOfBirth");
+        By dateOfBirth = By.cssSelector("#dateOfBirthInput");
         wait.until(ExpectedConditions.elementToBeClickable(dateOfBirth)).click();
         By yearSelect = By.cssSelector("[class*=\"year-select\"]");
         wait.until(ExpectedConditions.visibilityOfElementLocated(yearSelect)).click();
@@ -50,9 +52,8 @@ public class advancedSeleniumTestSix {
         wait.until(ExpectedConditions.elementToBeClickable(citySelect)).click();
         By citySelecting = By.xpath("//div[text()='Delhi']");
         wait.until(ExpectedConditions.elementToBeClickable(citySelecting)).click();
-        wait.until(ExpectedConditions.elementToBeClickable(citySelect)).click();
-        By submit = By.cssSelector("#submit");
-        wait.until(ExpectedConditions.elementToBeClickable(submit)).click();
+        WebElement submit = driver.findElement(By.cssSelector("#submit"));
+        javascriptExecutor.executeScript("arguments[0].click();", submit);
         driver.quit();
     }
 }
