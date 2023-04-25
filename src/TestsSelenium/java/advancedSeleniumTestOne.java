@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class advancedSeleniumTestOne {
     @Test
-    public void advancedTestOne(){
+    public void advancedTestOne() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -16,9 +16,9 @@ public class advancedSeleniumTestOne {
         driver.get(urlPage);
         String title = driver.getTitle();
         int titleLength = title.length();
-        System.out.println(title+" "+titleLength);
+        System.out.println(title + " " + titleLength);
         String pageURL = driver.getCurrentUrl();
-        Assert.assertEquals(pageURL,urlPage);
+        Assert.assertEquals(pageURL, urlPage);
         String pageSource = driver.getPageSource();
         int pageSourceLength = pageSource.length();
         System.out.println(pageSourceLength);
